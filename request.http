@@ -1,15 +1,16 @@
 ###
-
-GET http://localhost:3000/game/2 HTTP/1.1
+GET http://localhost:3000/ HTTP/1.1
 
 
 ###
+GET http://localhost:3000/game/1 HTTP/1.1
 
+
+###
 POST http://localhost:3000/game HTTP/1.1
 Content-Type: application/json
 
 {
-    "state": "active",
-    "cells":[] //resolver como insertar array en mysql
+    "state": 1
 }
  

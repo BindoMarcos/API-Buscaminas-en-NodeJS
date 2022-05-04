@@ -4,13 +4,16 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec",
     "start": "nodemon src/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chai": "^4.3.6",
     "express": "^4.18.1",
+    "mocha": "^10.0.0",
     "mysql": "^2.18.1"
   },
   "devDependencies": {
