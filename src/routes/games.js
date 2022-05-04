@@ -33,7 +33,7 @@ routes.get(['/game', '/game/'], (req, res) => {
 });
 
 routes.post('/game', (req, res) => {
-    let state = setState(req.body.state);
+    let state = setState(1);
     let cells = "[]";
     dbConn.query('INSERT INTO games (state , cells) VALUES (?,?)', [state, cells], (err, rows) => {
 
